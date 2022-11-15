@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('checkvalidate') {
+            steps {
+                echo 'Iam validating the code '
+            }
+        }
+stages {
+        stage('compile') {
+            steps {
+                echo 'Iam compiling the code'
+            }
+        }
+stages {
+        stage('install') {
+            steps {
+                echo 'Iam installing the code'
+            }
+        }
+stages {
+        stage('deploy') {
+            steps {
+                echo 'Iam deploying the code'
+            }
+        }
+    }
+}
